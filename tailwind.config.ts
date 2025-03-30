@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Open Sans', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +66,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				science: {
+					'50': '#f3f4fb',
+					'100': '#e6e9f7',
+					'200': '#d1d6ef',
+					'300': '#b1b9e3',
+					'400': '#8c94d3',
+					'500': '#6e74c3',
+					'600': '#5759b0',
+					'700': '#4a4a9c',
+					'800': '#3f407f',
+					'900': '#373867',
+					'950': '#23233d',
 				}
 			},
 			borderRadius: {
