@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <a href="#" className="text-science-700 font-montserrat font-bold text-xl">
-            Lic. María Ciencia
+            Lic. Laura Vargas
           </a>
           
           {/* Mobile menu button */}

@@ -4,13 +4,14 @@ import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const domain = "lauravargas.science";
   
   return (
     <footer className="bg-science-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="text-xl font-bold mb-6">Lic. María Ciencia</h3>
+            <h3 className="text-xl font-bold mb-6">Lic. Laura Vargas</h3>
             <p className="text-science-200 mb-6">
               Ayudando a investigadores a maximizar el impacto de sus publicaciones y 
               acelerar sus carreras científicas con estrategias basadas en datos.
@@ -66,7 +67,7 @@ const Footer = () => {
         <Separator className="my-8 bg-science-800" />
         
         <div className="text-center text-science-300">
-          <p>&copy; {currentYear} Lic. María Ciencia. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} <a href={`https://${domain}`} className="hover:text-white transition-colors">{domain}</a>. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
