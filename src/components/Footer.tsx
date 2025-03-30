@@ -10,10 +10,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="text-xl font-bold mb-6">Dr. Jane Science</h3>
+            <h3 className="text-xl font-bold mb-6">Lic. María Ciencia</h3>
             <p className="text-science-200 mb-6">
-              Helping researchers maximize their publication impact and 
-              accelerate their scientific careers with data-driven strategies.
+              Ayudando a investigadores a maximizar el impacto de sus publicaciones y 
+              acelerar sus carreras científicas con estrategias basadas en datos.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-science-300 transition-colors">
@@ -41,24 +41,24 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-6">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-6">Enlaces Rápidos</h3>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-science-200 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#services" className="text-science-200 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#about" className="text-science-200 hover:text-white transition-colors">About</a></li>
-              <li><a href="#testimonials" className="text-science-200 hover:text-white transition-colors">Testimonials</a></li>
-              <li><a href="#contact" className="text-science-200 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#home" className="text-science-200 hover:text-white transition-colors">Inicio</a></li>
+              <li><a href="#services" className="text-science-200 hover:text-white transition-colors">Servicios</a></li>
+              <li><a href="#about" className="text-science-200 hover:text-white transition-colors">Acerca de</a></li>
+              <li><a href="#testimonials" className="text-science-200 hover:text-white transition-colors">Testimonios</a></li>
+              <li><a href="#contact" className="text-science-200 hover:text-white transition-colors">Contacto</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-6">Services</h3>
+            <h3 className="text-xl font-bold mb-6">Servicios</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Research Paper Editing</a></li>
-              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Impact Factor Strategy</a></li>
-              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Journal Selection</a></li>
-              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Literature Review</a></li>
-              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Citation Enhancement</a></li>
+              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Edición de Trabajos</a></li>
+              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Estrategia de Factor de Impacto</a></li>
+              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Selección de Revistas</a></li>
+              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Revisión Bibliográfica</a></li>
+              <li><a href="#" className="text-science-200 hover:text-white transition-colors">Mejora de Citaciones</a></li>
             </ul>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Footer = () => {
         <Separator className="my-8 bg-science-800" />
         
         <div className="text-center text-science-300">
-          <p>&copy; {currentYear} Dr. Jane Science. All rights reserved.</p>
+          <p>&copy; {currentYear} Lic. María Ciencia. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

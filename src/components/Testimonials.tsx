@@ -28,28 +28,28 @@ const TestimonialCard = ({ quote, author, position, institution }: {
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Dr. Jane's strategic guidance helped me publish in a Q1 journal for the first time. Her insights on journal selection and manuscript preparation were invaluable.",
-      author: "Dr. Sarah Johnson",
-      position: "Associate Professor",
-      institution: "University of Cambridge"
+      quote: "La orientación estratégica de la Lic. María me ayudó a publicar en una revista Q1 por primera vez. Sus conocimientos sobre selección de revistas y preparación de manuscritos fueron invaluables.",
+      author: "Dra. Sara Rodríguez",
+      position: "Profesora Asociada",
+      institution: "Universidad Complutense de Madrid"
     },
     {
-      quote: "Working with Dr. Jane transformed my publication strategy. My h-index improved significantly after implementing her recommendations for just one year.",
-      author: "Prof. Michael Chen",
-      position: "Research Director",
-      institution: "Stanford University"
+      quote: "Trabajar con la Lic. María transformó mi estrategia de publicación. Mi índice h mejoró significativamente después de implementar sus recomendaciones durante solo un año.",
+      author: "Prof. Miguel Sánchez",
+      position: "Director de Investigación",
+      institution: "Universidad de Barcelona"
     },
     {
-      quote: "As an early career researcher, I was struggling with the publication process. Dr. Jane's mentorship helped me navigate the complexities of academic publishing with confidence.",
-      author: "Dr. Emily Rodriguez",
-      position: "Postdoctoral Researcher",
-      institution: "Max Planck Institute"
+      quote: "Como investigadora en etapa inicial, estaba luchando con el proceso de publicación. La mentoría de la Lic. María me ayudó a navegar por las complejidades de la publicación académica con confianza.",
+      author: "Dra. Laura Martínez",
+      position: "Investigadora Postdoctoral",
+      institution: "CONICET Argentina"
     },
     {
-      quote: "The literature review support was exceptional. Dr. Jane identified crucial research gaps that strengthened our theoretical framework and improved our paper's significance.",
-      author: "Dr. James Wilson",
-      position: "Principal Investigator",
-      institution: "Oxford University"
+      quote: "El apoyo para la revisión bibliográfica fue excepcional. La Lic. María identificó brechas cruciales de investigación que fortalecieron nuestro marco teórico y mejoraron la relevancia de nuestro artículo.",
+      author: "Dr. Javier Moreno",
+      position: "Investigador Principal",
+      institution: "Universidad Nacional Autónoma de México"
     },
   ];
 
@@ -57,9 +57,9 @@ const Testimonials = () => {
     <section id="testimonials" className="section-padding bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-science-900">Client Success Stories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-science-900">Historias de Éxito</h2>
           <p className="text-lg text-science-700 max-w-3xl mx-auto">
-            Hear from researchers who have enhanced their academic impact with our services
+            Conoce a los investigadores que han mejorado su impacto académico con nuestros servicios
           </p>
         </div>
         

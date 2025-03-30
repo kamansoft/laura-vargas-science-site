@@ -47,8 +47,8 @@ const Contact = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       toast({
-        title: "Message Sent!",
-        description: "Thank you for your inquiry. We'll get back to you shortly.",
+        title: "¡Mensaje Enviado!",
+        description: "Gracias por tu consulta. Te contactaremos pronto.",
         duration: 5000,
       });
       setFormData({
@@ -64,9 +64,9 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-science-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-science-900">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-science-900">Contáctanos</h2>
           <p className="text-lg text-science-700 max-w-3xl mx-auto">
-            Have questions about how I can help with your scientific publications? Let's discuss your research goals.
+            ¿Tienes preguntas sobre cómo puedo ayudarte con tus publicaciones científicas? Conversemos sobre tus objetivos de investigación.
           </p>
         </div>
         
@@ -74,31 +74,31 @@ const Contact = () => {
           <div className="lg:w-1/3">
             <Card className="h-full">
               <CardHeader>
-                <CardTitle className="text-2xl text-science-800">Contact Information</CardTitle>
+                <CardTitle className="text-2xl text-science-800">Información de Contacto</CardTitle>
                 <CardDescription className="text-science-600">
-                  Reach out through any of these channels
+                  Comunícate a través de cualquiera de estos canales
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ContactInfo 
                   icon={<Mail className="h-5 w-5" />}
-                  title="Email"
-                  details="contact@drjanescience.com"
+                  title="Correo Electrónico"
+                  details="contacto@mariaciencia.com"
                 />
                 <ContactInfo 
                   icon={<Phone className="h-5 w-5" />}
-                  title="Phone"
-                  details="+1 (555) 123-4567"
+                  title="Teléfono"
+                  details="+34 123 456 789"
                 />
                 <ContactInfo 
                   icon={<MapPin className="h-5 w-5" />}
-                  title="Office"
-                  details="123 Academic Street, Research District, Science City"
+                  title="Oficina"
+                  details="Calle Investigación 123, Madrid, España"
                 />
                 <ContactInfo 
                   icon={<Clock className="h-5 w-5" />}
-                  title="Office Hours"
-                  details="Monday - Friday: 9:00 AM - 5:00 PM"
+                  title="Horario de Atención"
+                  details="Lunes - Viernes: 9:00 - 17:00"
                 />
               </CardContent>
             </Card>
@@ -107,9 +107,9 @@ const Contact = () => {
           <div className="lg:w-2/3">
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl text-science-800">Send A Message</CardTitle>
+                <CardTitle className="text-2xl text-science-800">Enviar un Mensaje</CardTitle>
                 <CardDescription className="text-science-600">
-                  Fill out the form below and I'll respond as soon as possible
+                  Completa el formulario y te responderé lo antes posible
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -117,7 +117,7 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-science-700 mb-2">
-                        Full Name
+                        Nombre Completo
                       </label>
                       <Input
                         id="name"
@@ -125,13 +125,13 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="Your name"
+                        placeholder="Tu nombre"
                         className="w-full"
                       />
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-science-700 mb-2">
-                        Email Address
+                        Correo Electrónico
                       </label>
                       <Input
                         id="email"
@@ -140,7 +140,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        placeholder="your.email@example.com"
+                        placeholder="tu.email@ejemplo.com"
                         className="w-full"
                       />
                     </div>
@@ -148,7 +148,7 @@ const Contact = () => {
                   
                   <div className="mb-6">
                     <label htmlFor="subject" className="block text-sm font-medium text-science-700 mb-2">
-                      Subject
+                      Asunto
                     </label>
                     <Input
                       id="subject"
@@ -156,14 +156,14 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      placeholder="What is your inquiry about?"
+                      placeholder="¿Sobre qué es tu consulta?"
                       className="w-full"
                     />
                   </div>
                   
                   <div className="mb-6">
                     <label htmlFor="message" className="block text-sm font-medium text-science-700 mb-2">
-                      Message
+                      Mensaje
                     </label>
                     <Textarea
                       id="message"
@@ -171,7 +171,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      placeholder="Describe your research needs or questions"
+                      placeholder="Describe tus necesidades de investigación o preguntas"
                       className="w-full min-h-[150px]"
                     />
                   </div>
@@ -181,7 +181,7 @@ const Contact = () => {
                     className="w-full md:w-auto bg-science-600 hover:bg-science-700"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
                   </Button>
                 </form>
               </CardContent>

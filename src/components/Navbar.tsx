@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <a href="#" className="text-science-700 font-montserrat font-bold text-xl">
-            Dr. Jane Science
+            Lic. María Ciencia
           </a>
           
           {/* Mobile menu button */}
@@ -32,12 +32,12 @@ const Navbar = () => {
 
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-science-900 hover:text-science-700 font-medium">Home</a>
-            <a href="#services" className="text-science-900 hover:text-science-700 font-medium">Services</a>
-            <a href="#about" className="text-science-900 hover:text-science-700 font-medium">About</a>
-            <a href="#testimonials" className="text-science-900 hover:text-science-700 font-medium">Testimonials</a>
-            <a href="#contact" className="text-science-900 hover:text-science-700 font-medium">Contact</a>
-            <Button className="bg-science-600 hover:bg-science-700">Book Consultation</Button>
+            <a href="#home" className="text-science-900 hover:text-science-700 font-medium">Inicio</a>
+            <a href="#services" className="text-science-900 hover:text-science-700 font-medium">Servicios</a>
+            <a href="#about" className="text-science-900 hover:text-science-700 font-medium">Acerca de</a>
+            <a href="#testimonials" className="text-science-900 hover:text-science-700 font-medium">Testimonios</a>
+            <a href="#contact" className="text-science-900 hover:text-science-700 font-medium">Contacto</a>
+            <Button className="bg-science-600 hover:bg-science-700">Reservar Consulta</Button>
           </div>
         </div>
 
@@ -45,12 +45,12 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-3">
-              <a href="#home" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Home</a>
-              <a href="#services" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Services</a>
-              <a href="#about" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>About</a>
-              <a href="#testimonials" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Testimonials</a>
-              <a href="#contact" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Contact</a>
-              <Button className="bg-science-600 hover:bg-science-700 w-full">Book Consultation</Button>
+              <a href="#home" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Inicio</a>
+              <a href="#services" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Servicios</a>
+              <a href="#about" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Acerca de</a>
+              <a href="#testimonials" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Testimonios</a>
+              <a href="#contact" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Contacto</a>
+              <Button className="bg-science-600 hover:bg-science-700 w-full">Reservar Consulta</Button>
             </div>
           </div>
         )}

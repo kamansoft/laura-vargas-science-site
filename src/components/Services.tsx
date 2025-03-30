@@ -21,33 +21,33 @@ const Services = () => {
   const services = [
     {
       icon: <FileText className="h-6 w-6" />,
-      title: "Research Paper Editing",
-      description: "Expert editing services to polish your research paper for clarity, coherence, and academic rigor before submission to high-impact journals."
+      title: "Edición de Trabajos de Investigación",
+      description: "Servicios de edición experta para pulir tu trabajo de investigación con claridad, coherencia y rigor académico antes de enviarlo a revistas de alto impacto."
     },
     {
       icon: <TrendingUp className="h-6 w-6" />,
-      title: "Impact Factor Strategy",
-      description: "Strategic guidance to target journals with optimal impact factors for your research field, increasing citation potential and visibility."
+      title: "Estrategia de Factor de Impacto",
+      description: "Orientación estratégica para dirigir tu investigación a revistas con factores de impacto óptimos para tu campo, aumentando el potencial de citación y visibilidad."
     },
     {
       icon: <GraduationCap className="h-6 w-6" />,
-      title: "Academic Career Planning",
-      description: "Personalized publication strategies aligned with your career goals to establish your authority in your research domain."
+      title: "Planificación de Carrera Académica",
+      description: "Estrategias personalizadas de publicación alineadas con tus objetivos profesionales para establecer tu autoridad en tu área de investigación."
     },
     {
       icon: <BookOpen className="h-6 w-6" />,
-      title: "Literature Review Support",
-      description: "Comprehensive literature review services to strengthen your theoretical framework and identify research gaps."
+      title: "Apoyo en Revisión Bibliográfica",
+      description: "Servicios completos de revisión bibliográfica para fortalecer tu marco teórico e identificar brechas de investigación."
     },
     {
       icon: <Search className="h-6 w-6" />,
-      title: "Journal Selection Analysis",
-      description: "Data-driven analysis to identify the most suitable journals for your manuscript based on scope, audience, and publication metrics."
+      title: "Análisis de Selección de Revistas",
+      description: "Análisis basado en datos para identificar las revistas más adecuadas para tu manuscrito según alcance, audiencia y métricas de publicación."
     },
     {
       icon: <CheckSquare className="h-6 w-6" />,
-      title: "Citation Enhancement",
-      description: "Tactical approaches to structure your paper for maximum citation potential, improving your h-index and academic profile."
+      title: "Mejora de Citaciones",
+      description: "Enfoques tácticos para estructurar tu artículo y maximizar el potencial de citación, mejorando tu índice h y perfil académico."
     }
   ];
 
@@ -55,9 +55,9 @@ const Services = () => {
     <section id="services" className="section-padding bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-science-900">Scientific Publication Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-science-900">Servicios de Publicación Científica</h2>
           <p className="text-lg text-science-700 max-w-3xl mx-auto">
-            Comprehensive solutions to enhance your research impact and accelerate your academic career
+            Soluciones integrales para mejorar el impacto de tu investigación y acelerar tu carrera académica
           </p>
         </div>
         
