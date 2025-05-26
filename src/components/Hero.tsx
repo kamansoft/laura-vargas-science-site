@@ -30,8 +30,8 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-science-400 to-science-600 opacity-30 blur"></div>
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Estudiante de doctorado investigando en biblioteca universitaria" 
+                src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Biblioteca universitaria con publicaciones profesionales y material académico" 
                 className="relative rounded-lg shadow-xl w-full max-w-lg object-cover"
               />
             </div>
