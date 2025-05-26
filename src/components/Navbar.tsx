@@ -18,12 +18,15 @@ const Navbar = () => {
   const handleNavClick = (href: string) => {
     setIsOpen(false);
     
-    // Smooth scroll to the target section
+    // Smooth scroll to the target section with offset for navbar
     const target = document.querySelector(href);
     if (target) {
-      target.scrollIntoView({
+      const navbarHeight = 80; // Account for navbar height
+      const targetPosition = target.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
         behavior: 'smooth',
-        block: 'start',
       });
     }
   };
