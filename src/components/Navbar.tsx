@@ -15,8 +15,17 @@ const Navbar = () => {
     { href: "#contact", label: "Contacto" },
   ];
 
-  const handleNavClick = () => {
+  const handleNavClick = (href: string) => {
     setIsOpen(false);
+    
+    // Smooth scroll to the target section
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   };
 
   return (
@@ -30,15 +39,18 @@ const Navbar = () => {
           {/* Desktop navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a 
+              <button 
                 key={item.href}
-                href={item.href} 
-                className="text-science-900 hover:text-science-700 font-medium transition-colors"
+                onClick={() => handleNavClick(item.href)}
+                className="text-science-900 hover:text-science-700 font-medium transition-colors cursor-pointer bg-transparent border-none"
               >
                 {item.label}
-              </a>
+              </button>
             ))}
-            <Button className="bg-science-600 hover:bg-science-700">
+            <Button 
+              onClick={() => handleNavClick('#contact')}
+              className="bg-science-600 hover:bg-science-700"
+            >
               Reservar Consulta
             </Button>
           </div>
@@ -66,21 +78,20 @@ const Navbar = () => {
                   
                   <nav className="flex flex-col space-y-6 flex-1">
                     {navItems.map((item) => (
-                      <a
+                      <button
                         key={item.href}
-                        href={item.href}
-                        onClick={handleNavClick}
-                        className="text-science-900 hover:text-science-700 font-medium text-lg py-2 transition-colors border-b border-science-100 last:border-b-0"
+                        onClick={() => handleNavClick(item.href)}
+                        className="text-science-900 hover:text-science-700 font-medium text-lg py-2 transition-colors border-b border-science-100 last:border-b-0 text-left bg-transparent border-none cursor-pointer"
                       >
                         {item.label}
-                      </a>
+                      </button>
                     ))}
                   </nav>
                   
                   <div className="mt-8 pt-6 border-t border-science-100">
                     <Button 
                       className="bg-science-600 hover:bg-science-700 w-full"
-                      onClick={handleNavClick}
+                      onClick={() => handleNavClick('#contact')}
                     >
                       Reservar Consulta
                     </Button>
