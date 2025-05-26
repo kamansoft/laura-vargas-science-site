@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -19,7 +18,7 @@ const Navbar = () => {
     setIsOpen(false);
     
     // Smooth scroll to the target section with offset for navbar
-    const target = document.querySelector(href);
+    const target = document.querySelector(href) as HTMLElement;
     if (target) {
       const navbarHeight = 80; // Account for navbar height
       const targetPosition = target.offsetTop - navbarHeight;
