@@ -1,13 +1,22 @@
 
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const navItems = [
+    { href: "#home", label: "Inicio" },
+    { href: "#services", label: "Servicios" },
+    { href: "#about", label: "Acerca de" },
+    { href: "#testimonials", label: "Testimonios" },
+    { href: "#contact", label: "Contacto" },
+  ];
+
+  const handleNavClick = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -18,42 +27,69 @@ const Navbar = () => {
             Lic. Laura Vargas
           </a>
           
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              onClick={toggleMenu}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {/* Desktop navigation */}
+          <div className="hidden lg:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <a 
+                key={item.href}
+                href={item.href} 
+                className="text-science-900 hover:text-science-700 font-medium transition-colors"
+              >
+                {item.label}
+              </a>
+            ))}
+            <Button className="bg-science-600 hover:bg-science-700">
+              Reservar Consulta
             </Button>
           </div>
 
-          {/* Desktop navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-science-900 hover:text-science-700 font-medium">Inicio</a>
-            <a href="#services" className="text-science-900 hover:text-science-700 font-medium">Servicios</a>
-            <a href="#about" className="text-science-900 hover:text-science-700 font-medium">Acerca de</a>
-            <a href="#testimonials" className="text-science-900 hover:text-science-700 font-medium">Testimonios</a>
-            <a href="#contact" className="text-science-900 hover:text-science-700 font-medium">Contacto</a>
-            <Button className="bg-science-600 hover:bg-science-700">Reservar Consulta</Button>
+          {/* Mobile menu */}
+          <div className="lg:hidden">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="text-science-700"
+                  aria-label="Toggle menu"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center justify-between mb-8">
+                    <span className="text-science-700 font-montserrat font-bold text-xl">
+                      Menú
+                    </span>
+                  </div>
+                  
+                  <nav className="flex flex-col space-y-6 flex-1">
+                    {navItems.map((item) => (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        onClick={handleNavClick}
+                        className="text-science-900 hover:text-science-700 font-medium text-lg py-2 transition-colors border-b border-science-100 last:border-b-0"
+                      >
+                        {item.label}
+                      </a>
+                    ))}
+                  </nav>
+                  
+                  <div className="mt-8 pt-6 border-t border-science-100">
+                    <Button 
+                      className="bg-science-600 hover:bg-science-700 w-full"
+                      onClick={handleNavClick}
+                    >
+                      Reservar Consulta
+                    </Button>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-3">
-              <a href="#home" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Inicio</a>
-              <a href="#services" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Servicios</a>
-              <a href="#about" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Acerca de</a>
-              <a href="#testimonials" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Testimonios</a>
-              <a href="#contact" className="text-science-900 hover:text-science-700 py-2 font-medium" onClick={toggleMenu}>Contacto</a>
-              <Button className="bg-science-600 hover:bg-science-700 w-full">Reservar Consulta</Button>
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );
