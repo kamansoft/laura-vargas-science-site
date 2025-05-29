@@ -9,6 +9,11 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
+            <div className="mb-4">
+              <span className="inline-block bg-science-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-2">
+                lauravargas.science
+              </span>
+            </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 leading-tight text-science-950">
               Mejora Tus Publicaciones Científicas
             </h1>

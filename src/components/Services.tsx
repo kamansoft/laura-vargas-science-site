@@ -55,6 +55,11 @@ const Services = () => {
     <section id="services" className="section-padding bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
+          <div className="mb-4">
+            <span className="inline-block bg-science-100 text-science-700 px-4 py-2 rounded-full text-sm font-semibold">
+              Servicios Profesionales • lauravargas.science
+            </span>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-science-900">Servicios de Publicación Científica</h2>
           <p className="text-lg text-science-700 max-w-3xl mx-auto">
             Soluciones integrales para mejorar el impacto de tu investigación y acelerar tu carrera académica

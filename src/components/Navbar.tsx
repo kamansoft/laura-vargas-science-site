@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -34,9 +35,14 @@ const Navbar = () => {
     <nav className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-science-700 font-montserrat font-bold text-xl">
-            Lic. Laura Vargas
-          </a>
+          <div className="flex flex-col">
+            <a href="#" className="text-science-700 font-montserrat font-bold text-xl">
+              Lic. Laura Vargas
+            </a>
+            <span className="text-science-600 text-sm font-medium">
+              lauravargas.science
+            </span>
+          </div>
           
           {/* Desktop navigation */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -73,9 +79,14 @@ const Navbar = () => {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between mb-8">
-                    <span className="text-science-700 font-montserrat font-bold text-xl">
-                      Menú
-                    </span>
+                    <div className="flex flex-col">
+                      <span className="text-science-700 font-montserrat font-bold text-xl">
+                        Lic. Laura Vargas
+                      </span>
+                      <span className="text-science-600 text-sm font-medium">
+                        lauravargas.science
+                      </span>
+                    </div>
                   </div>
                   
                   <nav className="flex flex-col space-y-6 flex-1">
