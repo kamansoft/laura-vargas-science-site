@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img 
-              src="/lovable-uploads/50cfd662-de14-4bce-92fe-28e5298bffc4.png" 
+              src="/lovable-uploads/413a15fd-3c0b-4192-af32-86ca35fa8169.png" 
               alt="Laura Vargas Science Logo" 
               className="w-12 h-12"
             />
@@ -87,7 +87,7 @@ const Navbar = () => {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center gap-3 mb-8">
                     <img 
-                      src="/lovable-uploads/50cfd662-de14-4bce-92fe-28e5298bffc4.png" 
+                      src="/lovable-uploads/413a15fd-3c0b-4192-af32-86ca35fa8169.png" 
                       alt="Laura Vargas Science Logo" 
                       className="w-10 h-10"
                     />
