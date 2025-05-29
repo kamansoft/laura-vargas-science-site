@@ -35,13 +35,20 @@ const Navbar = () => {
     <nav className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <div className="flex flex-col">
-            <a href="#" className="text-science-700 font-montserrat font-bold text-xl">
-              Lic. Laura Vargas
-            </a>
-            <span className="text-science-600 text-sm font-medium">
-              lauravargas.science
-            </span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="/lovable-uploads/50cfd662-de14-4bce-92fe-28e5298bffc4.png" 
+              alt="Laura Vargas Science Logo" 
+              className="w-12 h-12"
+            />
+            <div className="flex flex-col">
+              <span className="text-science-700 font-montserrat font-bold text-lg leading-tight">
+                Laura Vargas
+              </span>
+              <span className="text-science-600 font-medium text-sm leading-tight">
+                Science
+              </span>
+            </div>
           </div>
           
           {/* Desktop navigation */}
@@ -78,13 +85,18 @@ const Navbar = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col h-full">
-                  <div className="flex items-center justify-between mb-8">
+                  <div className="flex items-center gap-3 mb-8">
+                    <img 
+                      src="/lovable-uploads/50cfd662-de14-4bce-92fe-28e5298bffc4.png" 
+                      alt="Laura Vargas Science Logo" 
+                      className="w-10 h-10"
+                    />
                     <div className="flex flex-col">
-                      <span className="text-science-700 font-montserrat font-bold text-xl">
-                        Lic. Laura Vargas
+                      <span className="text-science-700 font-montserrat font-bold text-lg leading-tight">
+                        Laura Vargas
                       </span>
-                      <span className="text-science-600 text-sm font-medium">
-                        lauravargas.science
+                      <span className="text-science-600 font-medium text-sm leading-tight">
+                        Science
                       </span>
                     </div>
                   </div>
