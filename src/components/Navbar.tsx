@@ -39,7 +39,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/logo.png"
               alt="Laura Vargas Science Logo" 
-              className="w-12 h-12"
+              className="w-8 h-12"
             />
             <div className="flex flex-col">
               <span className="text-science-700 font-montserrat font-bold text-lg leading-tight">

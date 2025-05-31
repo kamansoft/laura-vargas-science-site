@@ -25,11 +25,11 @@ const About = () => {
             </h2>
             
             <p className="text-base md:text-lg mb-4 md:mb-6 text-science-700 leading-relaxed">
-              Con una sólida trayectoria de mas de 6 años en la investigación científica y más de una década de experiencia asesorando a investigadores y grupos académicos en Colombia, Laura Vargas se ha consolidado como una experta en estrategias de publicación científica y fortalecimiento de la producción académica. Su enfoque especializado en las áreas de Ciencias Económicas, Administrativas, Contables, Políticas y Sociales le permite brindar acompañamiento integral a lo largo del ciclo de investigación, desde la formulación de propuestas hasta la publicación de resultados en artículos, libros y capítulos reconocidos.
+              Soy una profesional dedicada a potenciar la investigación científica en Colombia, brindando apoyo integral a investigadores y grupos académicos, especialmente en las áreas de Ciencias Económicas, Administrativas, Contables y Politicas y Sociales. Mi experiencia abarca la asesoría y elaboración de propuestas, artículos, libros y capítulos de libros resultados de investigación, a fin de participar en las diferentes convocatorias de Minciencias; de la mano con la optimización de la producción científica y el fortalecimiento del <b>índice H</b> mediante estrategias de publicación y colaboración.
             </p>
             
             <p className="text-base md:text-lg mb-6 md:mb-8 text-science-700 leading-relaxed">
-              Laura ha ayudado a investigadores a mejorar su visibilidad y aumentar su índice h mediante estrategias basadas en colaboración académica, selección estratégica de revistas y alineación con las convocatorias de Minciencias. Además, su compromiso con la formación de jóvenes investigadores ha contribuido al desarrollo de una comunidad científica más sólida, capaz de responder a los retos sociales y económicos del país.
+              Además, acompaño la formación de jóvenes investigadores, contribuyendo al desarrollo sostenible y a la consolidación de una comunidad científica robusta en el país. Mi compromiso es seguir contribuyendo al avance del conocimiento en estas disciplinas, apoyando la formulación de proyectos que respondan a los desafíos actuales y fomentando la articulación entre la academia, el sector público y la sociedad civil.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
