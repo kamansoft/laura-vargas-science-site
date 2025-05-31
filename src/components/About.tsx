@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id="about" className="py-12 md:py-16 lg:py-20 bg-science-50">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
           <div className="w-full lg:w-2/5 order-2 lg:order-1">
             <div className="relative max-w-md mx-auto lg:max-w-none">
               <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-science-400 to-science-600 opacity-30 blur"></div>
