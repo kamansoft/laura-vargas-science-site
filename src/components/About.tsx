@@ -7,9 +7,9 @@ const About = () => {
   return (
     <section id="about" className="py-12 md:py-16 lg:py-20 bg-science-50">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
           <div className="w-full lg:w-2/5 order-2 lg:order-1">
-            <div className="relative max-w-md mx-auto lg:max-w-none">
+            <div className="relative max-w-md mx-auto lg:max-w-none lg:mt-16">
               <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-science-400 to-science-600 opacity-30 blur"></div>
               <img 
                 src="/lovable-uploads/82e922ca-d624-498f-af76-deaf129499d9.png" 
@@ -25,20 +25,17 @@ const About = () => {
             </h2>
             
             <p className="text-base md:text-lg mb-4 md:mb-6 text-science-700 leading-relaxed">
-              Con más de 15 años de experiencia en publicación académica e investigación científica, 
-              he ayudado a investigadores de prestigiosas instituciones de todo el mundo a mejorar sus 
-              estrategias de publicación y aumentar sus tasas de aceptación en revistas científicas.
+              Soy una profesional dedicada a potenciar la investigación científica en Colombia, brindando apoyo integral a investigadores y grupos académicos, especialmente en las áreas de Ciencias Económicas, Administrativas, Contables y Politicas y Sociales. Mi experiencia abarca la asesoría y elaboración de propuestas, artículos, libros y capítulos de libros resultados de investigación, a fin de participar en las diferentes convocatorias de Minciencias; de la mano con la optimización de la producción científica y el fortalecimiento del <b>índice H</b> mediante estrategias de publicación y colaboración.
             </p>
             
             <p className="text-base md:text-lg mb-6 md:mb-8 text-science-700 leading-relaxed">
-              Mi enfoque combina un profundo conocimiento de las tendencias de publicación académica, análisis bibliométrico 
-              y planificación estratégica para ayudarte a maximizar el impacto de tu investigación y avanzar en tu carrera académica.
+              Además, acompaño la formación de jóvenes investigadores, contribuyendo al desarrollo sostenible y a la consolidación de una comunidad científica robusta en el país. Mi compromiso es seguir contribuyendo al avance del conocimiento en estas disciplinas, apoyando la formulación de proyectos que respondan a los desafíos actuales y fomentando la articulación entre la academia, el sector público y la sociedad civil.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
               <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm">
                 <FileText className="h-6 w-6 md:h-8 md:w-8 text-science-600 mb-2" />
-                <h3 className="text-science-800 font-semibold text-lg">200+</h3>
+                <h3 className="text-science-800 font-semibold text-lg">60+</h3>
                 <p className="text-science-600 text-sm">Trabajos Publicados</p>
               </div>
               
@@ -50,7 +47,7 @@ const About = () => {
               
               <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm">
                 <Book className="h-6 w-6 md:h-8 md:w-8 text-science-600 mb-2" />
-                <h3 className="text-science-800 font-semibold text-lg">15+</h3>
+                <h3 className="text-science-800 font-semibold text-lg">6+</h3>
                 <p className="text-science-600 text-sm">Años de Experiencia</p>
               </div>
             </div>

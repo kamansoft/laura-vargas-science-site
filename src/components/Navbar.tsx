@@ -37,14 +37,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img 
-              src="/lovable-uploads/413a15fd-3c0b-4192-af32-86ca35fa8169.png" 
+              src="/lovable-uploads/logo.png"
               alt="Laura Vargas Science Logo" 
-              className="w-12 h-12"
+              className="w-8 h-12"
             />
             <div className="flex flex-col">
               <span className="text-science-700 font-montserrat font-bold text-lg leading-tight">
                 Laura Vargas
               </span>
+
               <span className="text-science-600 font-medium text-sm leading-tight">
                 Science
               </span>
