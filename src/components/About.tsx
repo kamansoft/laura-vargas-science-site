@@ -25,20 +25,17 @@ const About = () => {
             </h2>
             
             <p className="text-base md:text-lg mb-4 md:mb-6 text-science-700 leading-relaxed">
-              Con más de 15 años de experiencia en publicación académica e investigación científica, 
-              he ayudado a investigadores de prestigiosas instituciones de todo el mundo a mejorar sus 
-              estrategias de publicación y aumentar sus tasas de aceptación en revistas científicas.
+              Con una sólida trayectoria de mas de 6 años en la investigación científica y más de una década de experiencia asesorando a investigadores y grupos académicos en Colombia, Laura Vargas se ha consolidado como una experta en estrategias de publicación científica y fortalecimiento de la producción académica. Su enfoque especializado en las áreas de Ciencias Económicas, Administrativas, Contables, Políticas y Sociales le permite brindar acompañamiento integral a lo largo del ciclo de investigación, desde la formulación de propuestas hasta la publicación de resultados en artículos, libros y capítulos reconocidos.
             </p>
             
             <p className="text-base md:text-lg mb-6 md:mb-8 text-science-700 leading-relaxed">
-              Mi enfoque combina un profundo conocimiento de las tendencias de publicación académica, análisis bibliométrico 
-              y planificación estratégica para ayudarte a maximizar el impacto de tu investigación y avanzar en tu carrera académica.
+              Laura ha ayudado a investigadores a mejorar su visibilidad y aumentar su índice h mediante estrategias basadas en colaboración académica, selección estratégica de revistas y alineación con las convocatorias de Minciencias. Además, su compromiso con la formación de jóvenes investigadores ha contribuido al desarrollo de una comunidad científica más sólida, capaz de responder a los retos sociales y económicos del país.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
               <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm">
                 <FileText className="h-6 w-6 md:h-8 md:w-8 text-science-600 mb-2" />
-                <h3 className="text-science-800 font-semibold text-lg">200+</h3>
+                <h3 className="text-science-800 font-semibold text-lg">60+</h3>
                 <p className="text-science-600 text-sm">Trabajos Publicados</p>
               </div>
               
@@ -50,7 +47,7 @@ const About = () => {
               
               <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm">
                 <Book className="h-6 w-6 md:h-8 md:w-8 text-science-600 mb-2" />
-                <h3 className="text-science-800 font-semibold text-lg">15+</h3>
+                <h3 className="text-science-800 font-semibold text-lg">6+</h3>
                 <p className="text-science-600 text-sm">Años de Experiencia</p>
               </div>
             </div>
